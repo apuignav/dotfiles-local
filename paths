@@ -1,0 +1,44 @@
+# Variables
+export BREW=`brew --prefix`
+# export HOMEBREW_BUILD_FROM_SOURCE=1
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+export TERM=xterm-256color
+# Setting the editors properly
+export EDITOR="$BREW/bin/mvim -v"
+export FPEDITOR="$BREW/bin/mvim -v"
+export VISUAL="$BREW/bin/mvim -v"
+export GIT_EDITOR="$BREW/bin/mvim -v"
+export UNISONLOCALHOSTNAME=dc10
+export OS=Darwin
+export MANPATH=$MANPATH:$BREW/man
+export ROOTSYS=$(brew --prefix root)
+export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r20.0.3
+# Dir aliases
+hash -d cmtuser=~/Arxiu/Fisica/LHCb/Projectes/CernVM/cmtuser
+# Path games
+cdpath+=(~/Arxiu/Fisica/LHCb/Projectes)
+# LD_LIBRARY_PATH
+NEW_LD_LIBRARY_PATH=$ROOTSYS/lib/root:$BREW/lib:/usr/lib:/usr/local/cuda/lib
+if [ -z "${LD_LIBRARY_PATH}" ]; then
+  LD_LIBRARY_PATH=$NEW_LD_LIBRARY_PATH; export LD_LIBRARY_PATH
+else
+  LD_LIBRARY_PATH+=:$NEW_LD_LIBRARY_PATH; export LD_LIBRARY_PATH
+fi
+# PATH
+NEW_PATH=$BREW/bin:$BREW/sbin:$ROOTSYS/bin:/usr/local/cuda/bin
+if [ -z "${PATH}" ]; then
+  PATH=$NEW_PATH; export PATH
+else
+  PATH=$NEW_PATH:$PATH; export PATH
+fi
+# PYTHONPATH
+NEW_PYTHONPATH=$BREW/lib:$ROOTSYS/lib/root:/Users/albert/Arxiu/Fisica/LHCb/Projectes:/Users/albert/Arxiu/Fisica/LHCb/Projectes/SciFi/python
+if [ -z "${PYTHONPATH}" ]; then
+  PYTHONPATH=$NEW_PYTHONPATH; export PYTHONPATH
+else
+  PYTHONPATH+=:$NEW_PYTHONPATH; export PYTHONPATH
+fi
+# DYLD_LIBRARY_PATH
+# export DYLD_LIBRARY_PATH=/usr/local/lib/llvm-3.4/lib
+
+# EOF

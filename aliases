@@ -1,0 +1,36 @@
+alias locateupdate='sudo /usr/libexec/locate.updatedb'
+alias dhcpserver='ipconfig getoption en0 server_identifier'
+alias smc='/Applications/smcFanControl.app/Contents/Resources/smc'
+alias reloadEthernet='sudo kextunload /System/Library/Extensions/IONetworkingFamily.kext/Contents/PlugIns/AppleYukon2.kext;sudo kextload /System/Library/Extensions/IONetworkingFamily.kext/Contents/PlugIns/AppleYukon2.kext'
+alias istatRestart='rm -f ~/Library/Preferences/com.bjango.istatmenus.plist && killall SystemUIServer'
+alias cleanDsStore='find . -type f -name "*.DS_Store" -ls -delete'
+
+# Backup
+alias backupMP3='rsync -aE --delete --progress MP3/ /Volumes/RaspiHD/Music'
+alias backupRadiative='rsync --delete -avPe ssh lphea:/panasas/radiative /Volumes/HAL/LHCb/.'
+alias backupSciFi='rsync --delete -avPe ssh lphea:/panasas/scifi_testbeam /Volumes/HAL/LHCb/SciFi/TestBeam/.'
+
+# Quick way to rebuild the Launch Services database and get rid of duplicates in the Open With submenu.
+# http://www.leancrew.com/all-this/2013/02/getting-rid-of-open-with-duplicates/
+alias fixOpenWith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
+alias upgradeMacVim='brew remove macvim && cd /System/Library/Frameworks/Python.framework/Versions && sudo mv Current Current-sys && sudo ln -sf /usr/local/opt/python/Frameworks/Python.framework/Versions/2.7 Current && brew install macvim --override-system-vim --with-lua && sudo mv Current Current-brew && sudo mv Current-sys Current'
+
+# From http://brettterpstra.com/2013/03/31/a-few-more-of-my-favorite-shell-aliases/
+alias tmlog="syslog -F '\$Time \$Message' -k Sender com.apple.backupd-auto -k Time ge -30m | tail -n 1"
+alias ip="curl icanhazip.com"
+alias stfu="osascript -e 'set volume output muted true'"
+
+# Apps
+alias sourcetree='open -a SourceTree .'
+alias vlc='open -a VLC'
+alias chrome='open -a "Google Chrome"'
+alias vi='/usr/local/bin/vi'
+
+function vim() {
+    if [ -f $1 ]; then
+        open -a MacVim $@
+    else
+        mvim $@
+    fi
+}
+
