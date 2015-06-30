@@ -1,0 +1,3 @@
+- shell:
+    - [homebrew/brew_formulae.py formulae.txt, Brewing tools]
+    - [homebrew/brew_formulae.py -c casks.txt, Installing casks]
