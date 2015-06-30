@@ -52,7 +52,7 @@ REQUIRED_FORMULAE = ['python']
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-c', '--cask', action='store_true', help='Use brew cask')
-    parser.add_argument('formulae_file', action='store', type='str', help='Formula list to brew')
+    parser.add_argument('formulae_file', action='store', type=str, help='Formula list to brew')
     args = parser.parse_args()
     brew(args.formulae_file, args.cask)
 
