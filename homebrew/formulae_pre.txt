@@ -1,0 +1,9 @@
+zsh
+git
+python
+ssh-copy-id
+coreutils
+readline
+gettext
+lua
+macvim

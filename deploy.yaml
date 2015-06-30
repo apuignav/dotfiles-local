@@ -1,3 +1,10 @@
+- link:
+    ~/.paths: paths
+    ~/.aliases: aliases
+    ~/.localrc: localrc
+
 - shell:
     - [homebrew/brew_formulae.py formulae.txt, Brewing tools]
     - [homebrew/brew_formulae.py -c casks.txt, Installing casks]
+    - [homebrew/brew_formulae.py -c fonts.txt, Installing fonts]
+    - [defaults.sh, Configuring defaults]
