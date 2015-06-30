@@ -1,3 +1,5 @@
+- shell:
+    - [mkdir -p ~/.pip && echo "[global]\ntarget=`python -c "import site; print site.USER_BASE"`" >> ~/.pip/pip.conf, Preparing pip directory]
 - link:
     ~/.localrc: localrc
     ~/.aliases: aliases
