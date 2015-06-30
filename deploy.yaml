@@ -4,7 +4,7 @@
     ~/.localrc: localrc
 
 - shell:
-    - [homebrew/brew_formulae.py formulae.txt, Brewing tools]
-    - [homebrew/brew_formulae.py -c casks.txt, Installing casks]
-    - [homebrew/brew_formulae.py -c fonts.txt, Installing fonts]
+    - [homebrew/brew_formulae.py homebrew/formulae.txt, Brewing tools]
+    - [homebrew/brew_formulae.py -c homebrew/casks.txt, Installing casks]
+    - [homebrew/brew_formulae.py -c homebrew/fonts.txt, Installing fonts]
     - [defaults.sh, Configuring defaults]

@@ -2,4 +2,4 @@
     - [homebrew/install.sh, Installing homebrew]
 
 - shell:
-    - [homebrew/brew_formulae.py formulae_pre.txt, Installing prerequisite tools]
+    - [homebrew/brew_formulae.py homebrew/formulae_pre.txt, Installing prerequisite tools]
