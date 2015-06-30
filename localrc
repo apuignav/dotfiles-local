@@ -1,0 +1,6 @@
+alias getpack="getpack --user apuignav"
+
+export PYTHONPATH=$HOME/python:$PYTHONPATH
+export LSCOLORS="gxfxcxdxbxegedabagacad"
+alias ls='ls --color'
+#DISABLE_LS_COLORS="false"

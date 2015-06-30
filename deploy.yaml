@@ -1,1 +1,4 @@
 - link:
+    ~/.localrc: localrc
+    ~/.aliases: aliases
+    ~/.paths: paths

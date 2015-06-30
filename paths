@@ -1,0 +1,6 @@
+# Variables
+export TERM=xterm-256color
+export EDITOR="vim"
+export PYTHONPATH=$HOME/python:$PYTHONPATH
+
+# EOF
