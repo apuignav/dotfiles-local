@@ -7,4 +7,15 @@
     - [homebrew/brew_formulae.py homebrew/formulae.txt, Brewing tools]
     - [homebrew/brew_formulae.py -c homebrew/casks.txt, Installing casks]
     - [homebrew/brew_formulae.py -c homebrew/fonts.txt, Installing fonts]
-    - [defaults.sh, Configuring defaults]
+    - 
+        description: "Configuring defaults"
+        command: "./defaults.sh"
+        stdout: true
+        stderr: true
+        stdin: true
+    -
+        description: "Fixing zsh"
+        command: "./fix_zsh.sh"
+        stdout: true
+        stderr: true
+        stdin: true

@@ -4,8 +4,6 @@
 
 # Here we go.. ask for the administrator password upfront and run a
 # keep-alive to update existing `sudo` time stamp until script has finished
-sudo -v
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
  
 echo ""
 echo "Would you like to set your computer name (as done via System Preferences >> Sharing)?  (y/n)"
@@ -19,7 +17,6 @@ case $response in
       sudo scutil --set LocalHostName $COMPUTER_NAME
       sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $COMPUTER_NAME
       break;;
-  *) break;;
 esac
 
 echo ""
@@ -54,3 +51,5 @@ for app in  "Dock" "Finder" "SystemUIServer";
 do
   killall "${app}" > /dev/null 2>&1
 done
+
+exit 0
