@@ -12,6 +12,7 @@ export UNISONLOCALHOSTNAME=dc10
 export OS=Darwin
 export MANPATH=$MANPATH:$BREW/man
 export ROOTSYS=$(brew --prefix root)
+GOSYS=$(brew --prefix go)
 export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r20.0.3
 # Dir aliases
 hash -d cmtuser=~/Arxiu/Fisica/LHCb/Projectes/CernVM/cmtuser
@@ -24,8 +25,12 @@ if [ -z "${LD_LIBRARY_PATH}" ]; then
 else
   LD_LIBRARY_PATH+=:$NEW_LD_LIBRARY_PATH; export LD_LIBRARY_PATH
 fi
+# Go path
+if [ -z "${GOPATH}" ]; then
+    GOPATH=${GOSYS}/bin; export GOPATH
+fi
 # PATH
-NEW_PATH=$BREW/bin:$BREW/sbin:$ROOTSYS/bin:/usr/local/cuda/bin
+NEW_PATH=$BREW/bin:$BREW/sbin:$ROOTSYS/bin:/usr/local/cuda/bin:${GOSYS}/libexec/bin:${GOPATH}/bin
 if [ -z "${PATH}" ]; then
   PATH=$NEW_PATH; export PATH
 else
