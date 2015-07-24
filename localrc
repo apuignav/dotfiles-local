@@ -7,6 +7,18 @@ alias cernvm_ummount="cd $HOME && umount ~/Arxiu/Fisica/LHCb/Projectes/CernVM/cm
 unalias run-help
 autoload run-help
 HELPDIR=/usr/local/share/zsh/helpfiles
+
+# iTerm shell integration
+source ~/.iterm2_shell_integration.zsh
+
+# Completion
+compctl -f -x 'p[2]' -s "`/bin/ls -d1 /Applications/*/*.app /Applications/*.app | sed 's|^.*/\([^/]*\)\.app.*|\\1|;s/ /\\\\ /g'`" -- open alias run='open -a'
+
+# Passpie completion
+if which passpie > /dev/null; then
+    eval "$(passpie complete zsh)"
+fi
+
 if [[ -z "$TMPSHELL" ]]; then
     archey -c
 fi
