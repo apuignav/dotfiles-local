@@ -13,7 +13,6 @@ alias backupSciFi='rsync --delete -avPe ssh lphea:/panasas/scifi_testbeam /Volum
 # Quick way to rebuild the Launch Services database and get rid of duplicates in the Open With submenu.
 # http://www.leancrew.com/all-this/2013/02/getting-rid-of-open-with-duplicates/
 alias fixOpenWith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
-alias upgradeMacVim='brew remove macvim && cd /System/Library/Frameworks/Python.framework/Versions && sudo mv Current Current-sys && sudo ln -sf /usr/local/opt/python/Frameworks/Python.framework/Versions/2.7 Current && brew install macvim --override-system-vim --with-lua && sudo mv Current Current-brew && sudo mv Current-sys Current'
 
 # From http://brettterpstra.com/2013/03/31/a-few-more-of-my-favorite-shell-aliases/
 alias tmlog="syslog -F '\$Time \$Message' -k Sender com.apple.backupd-auto -k Time ge -30m | tail -n 1"
@@ -22,9 +21,7 @@ alias stfu="osascript -e 'set volume output muted true'"
 
 # Apps
 alias sourcetree='open -a SourceTree .'
-alias vlc='open -a VLC'
-alias chrome='open -a "Google Chrome"'
-alias vi='/usr/local/bin/vi'
+alias vi='mvim -v'
 
 function vim() {
     if [ -f $1 ]; then
