@@ -21,7 +21,6 @@ alias stfu="osascript -e 'set volume output muted true'"
 
 # Apps
 alias sourcetree='open -a SourceTree .'
-alias vi='mvim -v'
 
 function vim() {
     if [ -f $1 ]; then
