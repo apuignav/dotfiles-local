@@ -8,7 +8,6 @@ export EDITOR="$BREW/bin/mvim -v"
 export FPEDITOR="$BREW/bin/mvim -v"
 export VISUAL="$BREW/bin/mvim -v"
 export GIT_EDITOR="$BREW/bin/mvim -v"
-export UNISONLOCALHOSTNAME=dc10
 export OS=Darwin
 export MANPATH=$MANPATH:$BREW/man
 export ROOTSYS=$(brew --prefix root)

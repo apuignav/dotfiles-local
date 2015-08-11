@@ -33,6 +33,5 @@ textwrangler
 todoist
 transmission
 truecrypt
-unison
 vlc
 xquartz
