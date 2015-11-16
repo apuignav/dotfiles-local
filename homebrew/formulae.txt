@@ -45,6 +45,7 @@ libmatroska
 pygobject
 mobile-shell
 pandoc
+pandoc-citeproc
 cloc
 graphviz
 mackup
