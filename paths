@@ -13,6 +13,7 @@ export MANPATH=$MANPATH:$BREW/man
 export ROOTSYS=$(brew --prefix root)
 GOSYS=$(brew --prefix go)
 export ANDROID_SDK_ROOT=/usr/local/Cellar/android-sdk/r20.0.3
+export GS_LIB=/usr/local/share/ghostscript/Resource/Init/
 # Dir aliases
 hash -d cmtuser=~/Arxiu/Fisica/LHCb/Projectes/CernVM/cmtuser
 # Path games
@@ -36,7 +37,7 @@ else
   PATH=$NEW_PATH:$PATH; export PATH
 fi
 # PYTHONPATH
-NEW_PYTHONPATH=$BREW/lib:$ROOTSYS/lib/root:/Users/albert/Arxiu/Fisica/LHCb/Projectes:/Users/albert/Arxiu/Fisica/LHCb/Projectes/SciFi/python
+NEW_PYTHONPATH=$BREW/lib:$ROOTSYS/lib/root:/Users/albert/Arxiu/Fisica/LHCb/Projectes/PyLHCb:/Users/albert/Arxiu/Fisica/LHCb/Projectes/SciFi/python
 if [ -z "${PYTHONPATH}" ]; then
   PYTHONPATH=$NEW_PYTHONPATH; export PYTHONPATH
 else
