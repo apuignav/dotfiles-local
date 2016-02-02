@@ -20,5 +20,5 @@ if which passpie > /dev/null; then
 fi
 
 if [[ -z "$TMPSHELL" ]]; then
-    archey -c
+    archey -c -o
 fi
