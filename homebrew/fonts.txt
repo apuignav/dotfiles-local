@@ -21,3 +21,4 @@ font-open-sans-condensed
 font-fira-mono-for-powerline
 font-fira-sans
 font-lato
+font-tex-gyre-pagella
