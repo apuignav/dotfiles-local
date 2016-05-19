@@ -51,4 +51,4 @@ graphviz
 mackup
 svn
 fpp
-python3
+googler
