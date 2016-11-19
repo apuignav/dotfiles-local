@@ -51,4 +51,4 @@ graphviz
 mackup
 svn
 fpp
-googler
+burntsushi/ripgrep/ripgrep-bin

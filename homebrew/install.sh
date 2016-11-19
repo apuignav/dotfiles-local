@@ -11,6 +11,7 @@ then
     brew tap homebrew/dupes
     brew tap caskroom/versions
     brew tap caskroom/homebrew-fonts
+    brew tap burntsushi/ripgrep https://github.com/BurntSushi/ripgrep.git
     # Install cask
     brew install caskroom/cask/brew-cask
     # Install X11 requirement
