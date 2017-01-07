@@ -23,3 +23,7 @@ font-fira-sans
 font-lato
 font-tex-gyre-pagella
 font-tex-gyre-pagella-math
+font-alegreya
+font-alegreya-sans
+font-alegreya-sans-sc
+font-alegreya-sc
