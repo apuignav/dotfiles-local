@@ -11,6 +11,9 @@ HELPDIR=/usr/local/share/zsh/helpfiles
 # iTerm shell integration
 source ~/.iterm2_shell_integration.zsh
 
+# Configure root
+pushd $(brew --prefix root6) >/dev/null; . libexec/thisroot.sh; popd >/dev/null
+
 # Colors for iterm tabs
 function tabcolor {
     case $1 in
@@ -40,6 +43,6 @@ if which passpie > /dev/null; then
     eval "$(passpie complete zsh)"
 fi
 
-if [[ -z "$TMPSHELL" ]]; then
-    archey -c -o
-fi
+#if [[ -z "$TMPSHELL" ]]; then
+    #archey -c -o
+#fi
