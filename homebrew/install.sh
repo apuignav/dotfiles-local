@@ -3,7 +3,7 @@
 if hash brew 2>/dev/null
 then
     # Install
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    # ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     # And caskroom
     brew tap caskroom/versions
     # Get a few taps

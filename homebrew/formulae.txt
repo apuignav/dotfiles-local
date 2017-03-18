@@ -12,12 +12,10 @@ wget
 curl
 ruby
 pkg-config
-rubber
 boost
 berkeley-db
 sqlite
 openssl
-the_silver_searcher
 fontforge
 freetype
 fontconfig
@@ -27,10 +25,10 @@ fftw
 gsl
 xrootd
 isl
-root
+root6
 gnupg
+gpg2
 gnuplot
-htop-osx
 iftop
 tmux
 reattach-to-user-namespace

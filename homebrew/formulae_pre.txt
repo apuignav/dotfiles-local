@@ -6,4 +6,4 @@ coreutils
 readline
 gettext
 lua
-macvim --override-system-vim
+macvim --with-override-system-vim
