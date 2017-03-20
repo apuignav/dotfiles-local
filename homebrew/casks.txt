@@ -19,6 +19,7 @@ nvalt
 scummvm
 skype
 sourcetree
+soulseek
 spectacle
 spotify
 transmission
