@@ -1,5 +1,6 @@
 font-source-code-pro-for-powerline
 font-inconsolata-dz-for-powerline
+font-inconsolata
 font-source-code-pro
 font-source-sans-pro
 font-source-serif-pro
@@ -26,3 +27,4 @@ font-alegreya
 font-alegreya-sans
 font-alegreya-sans-sc
 font-alegreya-sc
+font-fontawesome
