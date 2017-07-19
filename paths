@@ -32,7 +32,7 @@ if [ -z "${GOPATH}" ]; then
     GOPATH=${GOSYS}/bin; export GOPATH
 fi
 # PATH
-NEW_PATH=$BREW/bin:$BREW/sbin:/usr/local/cuda/bin:${GOSYS}/libexec/bin:${GOPATH}/bin
+NEW_PATH=/usr/local/opt/python/libexec/bin:$BREW/bin:$BREW/sbin:/usr/local/cuda/bin:${GOSYS}/libexec/bin:${GOPATH}/bin
 if [ -z "${PATH}" ]; then
   PATH=$NEW_PATH; export PATH
 else
