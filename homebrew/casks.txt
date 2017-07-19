@@ -10,7 +10,6 @@ evernote
 franz
 gimp
 google-chrome
-inkscape
 iterm2-beta
 latexit
 libreoffice
@@ -22,5 +21,6 @@ sourcetree
 soulseek
 spectacle
 spotify
+the-unarchiver
 transmission
 vlc
