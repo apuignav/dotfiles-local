@@ -9,6 +9,7 @@ ctags
 git-extras
 hub
 wget
+rsync
 curl
 ruby
 pkg-config
@@ -49,4 +50,5 @@ graphviz
 mackup
 svn
 fpp
+python3
 burntsushi/ripgrep/ripgrep-bin
